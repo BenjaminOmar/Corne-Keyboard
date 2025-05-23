@@ -44,7 +44,7 @@
         };
 
         extra_1 {
-            display-name = "Raise";
+            display-name = "extra1";
             bindings = <
         &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
         &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
@@ -54,7 +54,7 @@
         };
 
         extra_2 {
-            display-name = "Raise";
+            display-name = "extra2";
             bindings = <
         &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
         &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
