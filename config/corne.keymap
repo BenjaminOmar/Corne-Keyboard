@@ -16,10 +16,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESC  &kp Q               &kp W           &kp E             &kp R                 &kp T          &kp Y            &kp U                &kp I              &kp O            &kp P                        &none
-&none    &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &kp G          &kp H            &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_A_RING  &kp NB_AE
-&none    &kp Z               &kp X           &kp C             &kp V                 &kp B          &kp N            &kp M                &kp COMMA          &kp DOT          &kp NB_O_SLASH               &none
-                                             &none             &mt LEFT_COMMAND TAB  &lt 2 SPACE    &lt 1 BACKSPACE  &kp ENTER            &none
+&kp ESC           &kp Q               &kp W           &kp E             &kp R                 &kp T          &kp Y            &kp U                &kp I              &kp O            &kp P                        &none
+&lt 3 LEFT_SHIFT  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &kp G          &kp H            &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_A_RING  &kp NB_AE
+&none             &kp Z               &kp X           &kp C             &kp V                 &kp B          &kp N            &kp M                &kp COMMA          &kp DOT          &kp NB_O_SLASH               &none
+                                                      &none             &mt LEFT_COMMAND TAB  &lt 2 SPACE    &lt 1 BACKSPACE  &kp ENTER            &none
             >;
         };
 
