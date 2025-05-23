@@ -43,23 +43,23 @@
             >;
         };
 
-        extra_1 {
-            display-name = "extra1";
+        Miscellaneous {
+            display-name = "Miscellaneous";
             bindings = <
-        &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                            &none  &none  &none    &none  &none  &none
+&none  &none  &none  &none  &none  &none    &bt BT_PRV  &bt BT_NXT  &none  &none  &none  &bt BT_CLR_ALL
+&none  &none  &none  &none  &none  &none    &none       &none       &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none       &none       &none  &none  &none  &none
+                     &none  &none  &none    &none       &none       &none
             >;
         };
 
         extra_2 {
             display-name = "extra2";
             bindings = <
-        &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                            &none  &none  &none    &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
     };
