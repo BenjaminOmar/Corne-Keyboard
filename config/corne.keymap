@@ -19,10 +19,11 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             hold-trigger-on-release;
         };
-    };    
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -33,7 +34,7 @@
 &kp ESC           &kp Q               &kp W           &kp E             &kp R                 &kp T          &kp Y            &kp U                &kp I              &kp O            &kp P                        &none
 &lt 3 LEFT_SHIFT  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &lt 5 G        &lt 4 H          &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_A_RING  &kp NB_AE
 &none             &kp Z               &kp X           &kp C             &kp V                 &kp B          &kp N            &kp M                &kp COMMA          &kp DOT          &kp NB_O_SLASH               &none
-                                                      &none             &mt LEFT_COMMAND TAB  &lt 2 SPACE    &lt 1 BACKSPACE  &kp LG(LA(B))        &kp ENTER
+                                                      &lt 6 LG(TAB)     &mt LEFT_COMMAND TAB  &lt 2 SPACE    &lt 1 BACKSPACE  &kp LG(LA(B))        &kp ENTER
             >;
         };
 
@@ -57,8 +58,8 @@
             >;
         };
 
-        Miscellaneous {
-            display-name = "miscellaneous";
+        Misc {
+            display-name = "misc";
             bindings = <
 &none  &none  &bt BT_CLR  &none  &bt BT_PRV  &bt BT_NXT    &none  &none  &none  &none  &none  &none
 &none  &none  &none       &none  &none       &none         &none  &none  &none  &none  &none  &none
@@ -84,6 +85,15 @@
 &none  &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(NB_N5))))  &kp LC(NB_PLUS)  &kp LS(LA(LC(LG(NB_N6))))  &none  &none
 &none  &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F2))))  &none                      &none            &none                      &none  &none
                      &none  &none  &none    &none                   &none                      &none
+            >;
+        };
+
+        Nums {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N0  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
