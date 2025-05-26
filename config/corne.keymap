@@ -10,6 +10,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
+
 / {
     behaviors {
         mt: mod_tap {
