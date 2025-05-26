@@ -81,10 +81,10 @@
             >;
         };
 
-        Terminal {
-            display-name = "terminal";
+        IDE {
+            display-name = "ide";
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F3))))     &none            &none                      &none  &none
+&none  &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F3))))  &kp LS(LA(LC(LG(F3))))     &kp RG(W)        &none                      &none  &none
 &none  &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(NB_N5))))  &kp LC(NB_PLUS)  &kp LS(LA(LC(LG(NB_N6))))  &none  &none
 &none  &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F2))))  &none                      &none            &none                      &none  &none
                      &none  &none  &none    &none                   &none                      &none
