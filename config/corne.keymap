@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 850
+#define MY_POINTING_MOVE_VAL 850
 
 / {
     behaviors {
@@ -30,13 +30,15 @@
         fast_pointing: behavior_pointing_layer_params {
             compatible = "zmk,behavior-pointing-layer-params";
             #binding-cells = <0>;
-            move-speed-multiplier = <1.76>; // 1500/850 = ~1.76
+            // Multiply speed by ~1.76 to get from 850 to 1500
+            move-speed-multiplier = <176>;
+            move-speed-multiplier-denominator = <100>;
         };
     };
 
     pointing_parameters {
         compatible = "zmk,pointing-parameters";
-        move-speed = <ZMK_POINTING_DEFAULT_MOVE_VAL>;
+        move-speed = <MY_POINTING_MOVE_VAL>;
     };
 
     keymap {
