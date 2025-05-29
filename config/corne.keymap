@@ -26,14 +26,6 @@
             #binding-cells = <2>;
             hold-trigger-on-release;
         };
-
-        fast_pointing: behavior_pointing_layer_params {
-            compatible = "zmk,behavior-pointing-layer-params";
-            #binding-cells = <0>;
-            // Multiply speed by ~1.76 to get from 850 to 1500
-            move-speed-multiplier = <176>;
-            move-speed-multiplier-denominator = <100>;
-        };
     };
 
     pointing_parameters {
@@ -126,16 +118,17 @@
 
         fast_mouse {
             display-name = "fast mouse";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &mmv MOVE_UP    &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans          &trans          &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans         &trans
+            >;
+
             pointer-layer-params {
+                compatible = "zmk,pointing-layer-params";
                 move-speed = <1500>;
             };
-            
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &mmv MOVE_UP    &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans           &trans            &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans           &trans
-            >;
         };
     };
 };
