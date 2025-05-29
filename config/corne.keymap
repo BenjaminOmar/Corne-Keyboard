@@ -26,6 +26,17 @@
             #binding-cells = <2>;
             hold-trigger-on-release;
         };
+
+        fast_pointing: behavior_pointing_layer_params {
+            compatible = "zmk,behavior-pointing-layer-params";
+            #binding-cells = <0>;
+            move-speed-multiplier = <1.76>; // 1500/850 = ~1.76
+        };
+    };
+
+    pointing_parameters {
+        compatible = "zmk,pointing-parameters";
+        move-speed = <ZMK_POINTING_DEFAULT_MOVE_VAL>;
     };
 
     keymap {
@@ -105,7 +116,7 @@
             display-name = "mouse";
             bindings = <
 &none  &none  &none  &none  &none      &none        &none  &none           &mmv MOVE_UP    &none            &none  &none
-&none  &none  &none  &none  &mkp LCLK  &mkp RCLK    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&none  &none  &none  &fast_pointing  &mkp LCLK  &mkp RCLK    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
 &none  &none  &none  &none  &none      &none        &none  &none           &none           &none            &none  &none
                      &none  &none      &none        &none  &none           &none
             >;
