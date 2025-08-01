@@ -59,15 +59,29 @@
         tmux_window_4: tmux_window_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(B) &kp NUMBER_3>;
+            bindings = <&kp RC(B) &kp RIGHT_ARROW>;
             label = "TMUX_WINDOW_4";
         };
 
         tmux_kill_window: tmux_kill_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp M &kp X &kp U &kp X &kp SPACE &kp K &kp I &kp L &kp L &kp MINUS &kp W &kp I &kp N &kp D &kp O &kp W &kp ENTER>;
+            bindings = <&kp T &kp M &kp U &kp X &kp SPACE &kp K &kp I &kp L &kp L &kp MINUS &kp W &kp I &kp N &kp D &kp O &kp W &kp ENTER>;
             label = "TMUX_KILL_WINDOW";
+        };
+
+        tmux_right_arrow: tmux_right_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp NUMBER_3>;
+            label = "TMUX_RIGHT_ARROW";
+        };
+
+        tmux_left_arrow: tmux_left_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp LEFT_ARROW>;
+            label = "TMUX_LEFT_ARROW";
         };
     };
 
@@ -174,10 +188,10 @@
 
         tmux {
             bindings = <
-&none  &none  &none  &none  &none  &none    &tmux_kill_window  &tmux_window_1  &tmux_window_2  &tmux_window_3  &tmux_window_4  &none
-&none  &none  &none  &none  &none  &none    &tmux_new_window   &none           &none           &none           &none           &none
-&none  &none  &none  &none  &none  &none    &kp RC(B)          &none           &none           &none           &none           &none
-                     &none  &none  &none    &none              &none           &none
+&none  &none  &none  &none  &none  &none    &tmux_kill_window  &tmux_window_1    &tmux_window_2  &tmux_window_3     &tmux_window_4  &none
+&none  &none  &none  &none  &none  &none    &tmux_new_window   &tmux_left_arrow  &none           &tmux_right_arrow  &none           &none
+&none  &none  &none  &none  &none  &none    &kp RC(B)          &none             &none           &none              &none           &none
+                     &none  &none  &none    &none              &none             &none
             >;
         };
     };
