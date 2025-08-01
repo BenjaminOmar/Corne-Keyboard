@@ -62,6 +62,13 @@
             bindings = <&kp RC(B) &kp NUMBER_3>;
             label = "TMUX_WINDOW_3";
         };
+
+        tmux_kill_window: tmux_kill_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_3 &kp T &kp M &kp X &kp U &kp X &kp SPACE &kp K &kp I &kp L &kp L &kp MINUS &kp W &kp I &kp N &kp D &kp O &kp W &kp ENTER>;
+            label = "TMUX_KILL_WINDOW";
+        };
     };
 
     keymap {
@@ -167,10 +174,10 @@
 
         tmux {
             bindings = <
-&none  &none  &none  &none  &none  &none    &tmux_new_window  &kp NB_N0  &kp N1  &kp NUMBER_2  &kp NUMBER_3  &none
-&none  &none  &none  &none  &none  &none    &tmux_new_window  &none      &none   &none         &none         &none
-&none  &none  &none  &none  &none  &none    &kp RC(B)         &none      &none   &none         &none         &none
-                     &none  &none  &none    &none             &none      &none
+&none  &none  &none  &none  &none  &none    &tmux_kill_window  &tmux_window_1  &tmux_window_2  &tmux_window_3  &tmux_window_4  &none
+&none  &none  &none  &none  &none  &none    &tmux_new_window   &none           &none           &none           &none           &none
+&none  &none  &none  &none  &none  &none    &kp RC(B)          &none           &none           &none           &none           &none
+                     &none  &none  &none    &none              &none           &none
             >;
         };
     };
