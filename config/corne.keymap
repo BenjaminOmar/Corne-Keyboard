@@ -139,6 +139,13 @@
             bindings = <&kp RC(B) &kp LA(LS(N9))>;
             label = "TMUX_SWAP_PANE_RIGHT";
         };
+
+        tmux_pane_focus: tmux_pane_focus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp LA(LS(Z))>;
+            label = "TMUX_PANE_FOCUS";
+        };
     };
 
     keymap {
