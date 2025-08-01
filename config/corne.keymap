@@ -143,7 +143,7 @@
         tmux_pane_focus: tmux_pane_focus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(B) &kp LA(LS(Z))>;
+            bindings = <&kp RC(B) &kp Z>;
             label = "TMUX_PANE_FOCUS";
         };
     };
