@@ -73,16 +73,14 @@
         tmux_right_arrow: tmux_right_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(B)>, <&macro_wait_time 50>, <&kp RIGHT>;
-
+            bindings = <&kp RC(B) &kp N>;
             label = "TMUX_RIGHT_ARROW";
         };
 
         tmux_left_arrow: tmux_left_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(B)>, <&macro_wait_time 50>, <&kp LEFT_ARROW>;
-
+            bindings = <&kp RC(B) &kp P>;
             label = "TMUX_LEFT_ARROW";
         };
     };
