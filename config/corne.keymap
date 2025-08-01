@@ -66,7 +66,7 @@
         tmux_kill_window: tmux_kill_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp M &kp U &kp X &kp SPACE &kp K &kp I &kp L &kp L &kp MINUS &kp W &kp I &kp N &kp D &kp O &kp W &kp ENTER>;
+            bindings = <&kp T &kp M &kp U &kp X &kp SPACE &kp K &kp I &kp L &kp L &kp NB_MINUS &kp W &kp I &kp N &kp D &kp O &kp W &kp ENTER>;
             label = "TMUX_KILL_WINDOW";
         };
 
