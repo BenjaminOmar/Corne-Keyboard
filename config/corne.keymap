@@ -56,11 +56,11 @@
             label = "TMUX_WINDOW_3";
         };
 
-        tmux_window_4: tmux_window_3 {
+        tmux_window_4: tmux_window_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RC(B) &kp NUMBER_3>;
-            label = "TMUX_WINDOW_3";
+            label = "TMUX_WINDOW_4";
         };
 
         tmux_kill_window: tmux_kill_window {
