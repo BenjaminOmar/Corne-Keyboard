@@ -230,10 +230,10 @@
 
         tmux {
             bindings = <
-&none  &none  &none  &none  &none  &none    &tmux_kill_window  &tmux_split_pane_vertical  &tmux_pane_up       &tmux_split_pane_horizontal  &none  &none
-&none  &none  &none  &none  &none  &none    &tmux_new_window   &tmux_pane_left            &tmux_pane_down     &tmux_pane_right             &none  &none
-&none  &none  &none  &none  &none  &none    &kp RC(B)          &none                      &none               &none                        &none  &none
-                     &none  &none  &none    &none              &tmux_left_window          &tmux_right_window
+&none  &none  &none  &none  &none              &none               &kp RC(D)  &tmux_split_pane_horizontal  &tmux_pane_up       &tmux_split_pane_vertical  &none  &none
+&none  &none  &none  &none  &none              &none               &none      &tmux_pane_left              &tmux_pane_down     &tmux_pane_right           &none  &none
+&none  &none  &none  &none  &none              &none               &kp RC(B)  &none                        &none               &none                      &none  &none
+                     &none  &tmux_kill_window  &tmux_new_window    &none      &tmux_left_window            &tmux_right_window
             >;
         };
     };
