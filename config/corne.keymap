@@ -59,7 +59,7 @@
         tmux_window_4: tmux_window_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(B) &kp RIGHT_ARROW>;
+            bindings = <&kp RC(B) &kp NUMBER_3>;
             label = "TMUX_WINDOW_4";
         };
 
@@ -73,7 +73,7 @@
         tmux_right_arrow: tmux_right_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(B) &kp NUMBER_3>;
+            bindings = <&kp RC(B) &kp RIGHT>;
             label = "TMUX_RIGHT_ARROW";
         };
 
