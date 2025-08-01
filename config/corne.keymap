@@ -70,14 +70,14 @@
             label = "TMUX_KILL_WINDOW";
         };
 
-        tmux_right_arrow: tmux_right_arrow {
+        tmux_right_window: tmux_right_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RC(B) &kp N>;
             label = "TMUX_RIGHT_ARROW";
         };
 
-        tmux_left_arrow: tmux_left_arrow {
+        tmux_left_window: tmux_left_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RC(B) &kp P>;
@@ -96,6 +96,34 @@
             #binding-cells = <0>;
             bindings = <&kp RC(B) &kp NB_DOUBLE_QUOTES>;
             label = "TMUX_SPLIT_PANE_DOWN";
+        };
+
+        tmux_pane_up: tmux_pane_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp UP_ARROW>;
+            label = "TMUX_PANE_UP";
+        };
+
+        tmux_pane_down: tmux_pane_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp DOWN_ARROW>;
+            label = "TMUX_PANE_DOWN";
+        };
+
+        tmux_pane_left: tmux_pane_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp LEFT_ARROW>;
+            label = "TMUX_PANE_LEFT";
+        };
+
+        tmux_pane_right: tmux_pane_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp RIGHT_ARROW>;
+            label = "TMUX_PANE_RIGHT";
         };
     };
 
@@ -202,10 +230,10 @@
 
         tmux {
             bindings = <
-&none  &none  &none  &none  &none  &none    &tmux_kill_window  &tmux_window_1    &tmux_window_2               &tmux_window_3     &tmux_split_pane_horizontal  &none
-&none  &none  &none  &none  &none  &none    &tmux_new_window   &tmux_left_arrow  &tmux_split_pane_horizontal  &tmux_right_arrow  &tmux_split_pane_vertical    &none
-&none  &none  &none  &none  &none  &none    &kp RC(B)          &none             &tmux_split_pane_vertical    &none              &none                        &none
-                     &none  &none  &none    &tmux_window_1     &tmux_window_2    &tmux_window_3
+&none  &none  &none  &none  &none  &none    &tmux_kill_window  &tmux_split_pane_vertical  &tmux_pane_up       &tmux_split_pane_horizontal  &none  &none
+&none  &none  &none  &none  &none  &none    &tmux_new_window   &tmux_pane_left            &tmux_pane_down     &tmux_pane_right             &none  &none
+&none  &none  &none  &none  &none  &none    &kp RC(B)          &none                      &none               &none                        &none  &none
+                     &none  &none  &none    &none              &tmux_left_window          &tmux_right_window
             >;
         };
     };
