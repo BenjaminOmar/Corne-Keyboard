@@ -87,14 +87,14 @@
         tmux_split_pane_horizontal: tmux_split_pane_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(B) &kp NB_PERCENT>;
+            bindings = <&kp RC(B) &kp NB_DOUBLE_QUOTES>;
             label = "TMUX_SPLIT_PANE_UP";
         };
 
         tmux_split_pane_vertical: tmux_split_pane_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(B) &kp NB_DOUBLE_QUOTES>;
+            bindings = <&kp RC(B) &kp NB_PERCENT>;
             label = "TMUX_SPLIT_PANE_DOWN";
         };
 
@@ -230,10 +230,10 @@
 
         tmux {
             bindings = <
-&none  &none  &none  &none  &none              &none               &kp RC(D)  &tmux_split_pane_horizontal  &tmux_pane_up       &tmux_split_pane_vertical  &none  &none
-&none  &none  &none  &none  &none              &none               &none      &tmux_pane_left              &tmux_pane_down     &tmux_pane_right           &none  &none
-&none  &none  &none  &none  &none              &none               &kp RC(B)  &none                        &none               &none                      &none  &none
-                     &none  &tmux_kill_window  &tmux_new_window    &none      &tmux_left_window            &tmux_right_window
+&none  &none  &none  &none  &none              &none               &kp RC(D)  &tmux_split_pane_vertical  &tmux_pane_up       &tmux_split_pane_horizontal  &none  &none
+&none  &none  &none  &none  &none              &none               &none      &tmux_pane_left            &tmux_pane_down     &tmux_pane_right             &none  &none
+&none  &none  &none  &none  &none              &none               &kp RC(B)  &none                      &none               &none                        &none  &none
+                     &none  &tmux_kill_window  &tmux_new_window    &none      &tmux_left_window          &tmux_right_window
             >;
         };
     };
