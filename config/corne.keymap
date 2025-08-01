@@ -34,6 +34,34 @@
             bindings = <&kp RC(B) &kp C>;
             label = "TMUX_NEW_WINDOW";
         };
+
+        tmux_window_1: tmux_window_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp N0>;
+            label = "TMUX_WINDOW_1";
+        };
+
+        tmux_window_2: tmux_window_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp N1>;
+            label = "TMUX_WINDOW_2";
+        };
+
+        tmux_window_3: tmux_window_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp NUMBER_2>;
+            label = "TMUX_WINDOW_3";
+        };
+
+        tmux_window_4: tmux_window_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(B) &kp NUMBER_3>;
+            label = "TMUX_WINDOW_3";
+        };
     };
 
     keymap {
