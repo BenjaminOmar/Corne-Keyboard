@@ -155,9 +155,9 @@
         Base {
             display-name = "base";
             bindings = <
-&mo 3   &kp Q               &kp W           &kp E             &kp R                 &lt 9 NB_T     &kp Y            &kp U                &kp I              &kp O            &kp P                         &kp NB_A_RING
+&none   &kp Q               &kp W           &kp E             &kp R                 &lt 9 NB_T     &kp Y            &kp U                &kp I              &kp O            &kp P                         &kp NB_A_RING
 &mo 10  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &lt 6 G        &lt 4 H          &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_O_SLASH  &kp NB_AE
-&none   &kp Z               &kp X           &kp C             &kp V                 &lt 10 B       &mt BACKSPACE N  &kp M                &kp COMMA          &kp DOT          &none                         &none
+&mo 3   &kp Z               &kp X           &kp C             &kp V                 &lt 10 B       &mt BACKSPACE N  &kp M                &kp COMMA          &kp DOT          &none                         &none
                                             &lt 5 LC(TAB)     &mt LEFT_COMMAND TAB  &lt 2 SPACE    &lt 1 BACKSPACE  &kp ENTER            &kp LA(LG(B))
             >;
         };
@@ -255,7 +255,7 @@
 &none  &none  &none              &none  &none               &none               &none                        &tmux_swap_pane_left  &tmux_pane_up     &tmux_swap_pane_right  &none  &none
 &none  &none  &tmux_left_window  &none  &tmux_right_window  &none               &tmux_split_pane_vertical    &tmux_pane_left       &tmux_pane_down   &tmux_pane_right       &none  &none
 &none  &none  &none              &none  &none               &none               &tmux_split_pane_horizontal  &none                 &none             &none                  &none  &none
-                                 &none  &tmux_kill_window   &tmux_new_window    &kp RC(D)                    &none                 &tmux_pane_focus
+                                 &none  &tmux_kill_window   &tmux_new_window    &kp RC(D)                    &kp RC(B)             &tmux_pane_focus
             >;
         };
     };
