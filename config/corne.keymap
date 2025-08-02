@@ -233,6 +233,7 @@
         };
 
         Scroll {
+            display-name = "scroll";
             bindings = <
 &trans  &trans  &trans  &trans                 &trans  &trans    &trans  &trans           &msc SCRL_DOWN  &trans          &trans  &trans
 &trans  &trans  &trans  &mt LEFT_ALT LEFT_ALT  &trans  &trans    &trans  &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_LEFT  &trans  &trans
@@ -242,6 +243,7 @@
         };
 
         Raycast {
+            display-name = "raycast";
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp RA(NB_M)  &kp RS(RA(NB_N))  &none  &none  &none  &kp RS(RA(UP_ARROW))
 &none  &none  &none  &none  &none  &none    &kp RA(NB_R)  &kp RA(NB_N)      &none  &none  &none  &kp RS(RA(DOWN_ARROW))
@@ -249,8 +251,9 @@
                      &none  &none  &none    &none         &none             &none
             >;
         };
-
-        tmux {
+        
+        tmux-s {
+            display-name = "tmux-s";
             bindings = <
 &none  &none  &none              &none  &none               &none               &none                        &tmux_swap_pane_left  &tmux_pane_up     &tmux_swap_pane_right  &none  &none
 &none  &none  &tmux_left_window  &none  &tmux_right_window  &none               &tmux_split_pane_vertical    &tmux_pane_left       &tmux_pane_down   &tmux_pane_right       &none  &none
@@ -258,5 +261,16 @@
                                  &none  &tmux_kill_window   &tmux_new_window    &kp RC(D)                    &kp RC(B)             &tmux_pane_focus
             >;
         };
+
+        tmux-p {
+            display-name = "tmux-p";
+            bindings = <
+&none  &none  &none              &none  &none               &none               &none                        &tmux_swap_pane_left  &tmux_pane_up     &tmux_swap_pane_right  &none  &none
+&none  &none  &tmux_left_window  &none  &tmux_right_window  &none               &tmux_split_pane_vertical    &tmux_pane_left       &tmux_pane_down   &tmux_pane_right       &none  &none
+&none  &none  &none              &none  &none               &none               &tmux_split_pane_horizontal  &none                 &none             &none                  &none  &none
+                                 &none  &tmux_kill_window   &tmux_new_window    &kp RC(D)                    &kp RC(B)             &tmux_pane_focus
+            >;
+        };
+
     };
 };
