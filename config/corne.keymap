@@ -319,10 +319,10 @@
         tmux-r {
             display-name = "tmux-r";
             bindings = <
-&none  &none  &none  &none  &none  &none    &none              &none      &none             &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none              &none      &none             &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none              &none      &none             &none  &none  &none
-                     &none  &none  &none    &tmux_kill_window  &kp RC(B)  &tmux_pane_focus
+&none  &none  &none  &none  &none  &none    &none              &none                   &tmux_resize_pane_up    &none                    &none  &none
+&none  &none  &none  &none  &none  &none    &none              &tmux_resize_pane_left  &tmux_resize_pane_down  &tmux_resize_pane_right  &none  &none
+&none  &none  &none  &none  &none  &none    &none              &none                   &none                   &none                    &none  &none
+                     &none  &none  &none    &tmux_kill_window  &kp RC(B)               &tmux_pane_focus
             >;
         };
     };
