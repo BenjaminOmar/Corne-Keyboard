@@ -147,6 +147,50 @@
 
             label = "TMUX_PANE_FOCUS";
         };
+
+        tmux_resize_pane_up: tmux_resize_pane_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RC(B)>,
+                <&macro_wait_time 50>,
+                <&mt RC(PAGE_UP) RC(PAGE_UP)>;
+
+            label = "TMUX_RESIZE_PANE_UP";
+        };
+
+        tmux_resize_pane_down: tmux_resize_pane_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RC(B)>,
+                <&macro_wait_time 50>,
+                <&mt RC(PAGE_DOWN) RC(PAGE_DOWN)>;
+
+            label = "TMUX_RESIZE_PANE_DOWN";
+        };
+
+        tmux_resize_pane_left: tmux_resize_pane_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RC(B)>,
+                <&macro_wait_time 50>,
+                <&mt RC(C_MENU_LEFT) RC(C_MENU_LEFT)>;
+
+            label = "TMUX_RESIZE_PANE_LEFT";
+        };
+
+        tmux_resize_pane_right: tmux_resize_pane_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RC(B)>,
+                <&macro_wait_time 50>,
+                <&mt RC(C_MENU_RIGHT) RC(C_MENU_RIGHT)>;
+
+            label = "TMUX_RESIZE_PANE_RIGHT";
+        };
     };
 
     keymap {
@@ -255,10 +299,10 @@
         tmux-p {
             display-name = "tmux-p";
             bindings = <
-&none  &none  &none  &none  &none   &none    &none                        &tmux_swap_pane_left  &tmux_pane_up     &tmux_swap_pane_right  &none  &none
-&none  &none  &none  &none  &mo 11  &none    &tmux_split_pane_vertical    &tmux_pane_left       &tmux_pane_down   &tmux_pane_right       &none  &none
-&none  &none  &none  &none  &none   &none    &tmux_split_pane_horizontal  &none                 &none             &none                  &none  &none
-                     &none  &none   &none    &kp RC(D)                    &kp RC(B)             &tmux_pane_focus
+&none  &none  &none  &none  &none   &none     &none                        &tmux_swap_pane_left  &tmux_pane_up     &tmux_swap_pane_right  &none  &none
+&none  &none  &none  &none  &mo 11  &none     &tmux_split_pane_vertical    &tmux_pane_left       &tmux_pane_down   &tmux_pane_right       &none  &none
+&none  &none  &none  &none  &none   &none     &tmux_split_pane_horizontal  &none                 &none             &none                  &none  &none
+                     &none  &none   &mo 12    &kp RC(D)                    &kp RC(B)             &tmux_pane_focus
             >;
         };
 
@@ -275,10 +319,10 @@
         tmux-r {
             display-name = "tmux-r";
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp Y              &none              &none             &none               &none  &none
-&none  &none  &none  &none  &none  &none    &tmux_new_window   &tmux_left_window  &none             &tmux_right_window  &none  &none
-&none  &none  &none  &none  &none  &none    &none              &none              &none             &none               &none  &none
-                     &none  &none  &none    &tmux_kill_window  &kp RC(B)          &tmux_pane_focus
+&none  &none  &none  &none  &none  &none    &none              &none      &none             &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none              &none      &none             &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none              &none      &none             &none  &none  &none
+                     &none  &none  &none    &tmux_kill_window  &kp RC(B)  &tmux_pane_focus
             >;
         };
     };
