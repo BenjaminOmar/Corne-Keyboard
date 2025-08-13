@@ -30,16 +30,20 @@
             compatible = "zmk,behavior-macro";
             label = "OS_MAC";
             #binding-cells = <0>;
+
             // Select BLE profile 0 and set base layer to Mac (layer 0)
-            bindings = <&bt BT_SEL 0>, <&to 0>;
+
+            bindings = <&bt BT_SEL 0 &to 0>;
         };
 
         os_win: os_win {
             compatible = "zmk,behavior-macro";
             label = "OS_WIN";
             #binding-cells = <0>;
+
             // Select BLE profile 1 and set base layer to Windows (layer 1)
-            bindings = <&bt BT_SEL 1>, <&to 1>;
+
+            bindings = <&bt BT_SEL 1 &to 1>;
         };
     };
 
@@ -226,9 +230,9 @@
             display-name = "windows";
             bindings = <
 &none   &kp Q               &kp W           &kp E             &kp R                 &lt 10 NB_T    &kp Y            &kp U                &kp I              &kp O            &kp P                         &kp NB_A_RING
-&mo 11  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &lt 7 G        &lt 5 H          &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_O_SLASH  &kp NB_AE
+&mo 11  &mt LEFT_COMMAND A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_CONTROL F    &lt 7 G        &lt 5 H          &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_COMMAND NB_O_SLASH  &kp NB_AE
 &mo 4   &kp Z               &kp X           &kp C             &kp V                 &lt 12 B       &mt BACKSPACE N  &kp M                &kp COMMA          &kp DOT          &none                         &none
-                                            &lt 6 ESC         &mt LEFT_COMMAND TAB  &lt 3 SPACE    &lt 2 BACKSPACE  &kp ENTER            &kp LA(LG(B))
+                                            &lt 6 ESC         &mt LEFT_CONTROL TAB  &lt 3 SPACE    &lt 2 BACKSPACE  &kp ENTER            &kp LA(LG(B))
             >;
         };
 
@@ -255,10 +259,10 @@
         Misc {
             display-name = "misc";
             bindings = <
-&none  &none  &bt BT_CLR  &none  &os_mac  &os_win    &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS  &kp C_NEXT  &none
-&none  &none  &none       &none  &bt BT_PRV    &bt BT_NXT      &none             &none              &none            &none           &none       &none
-&none  &none  &none       &none  &none         &none           &none             &none              &none            &none           &none       &none
-                          &none  &none         &none           &none             &none              &none
+&none  &none  &bt BT_CLR  &none  &os_mac     &os_win       &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS  &kp C_NEXT  &none
+&none  &none  &none       &none  &bt BT_PRV  &bt BT_NXT    &none             &none              &none            &none           &none       &none
+&none  &none  &none       &none  &none       &none         &none             &none              &none            &none           &none       &none
+                          &none  &none       &none         &none             &none              &none
             >;
         };
 
