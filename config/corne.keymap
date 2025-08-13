@@ -199,10 +199,20 @@
         Mac_Base {
             display-name = "mac";
             bindings = <
-&none   &kp Q               &kp W           &kp E             &kp R                 &lt 9 NB_T     &kp Y            &kp U                &kp I              &kp O            &kp P                         &kp NB_A_RING
-&mo 10  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &lt 6 G        &lt 4 H          &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_O_SLASH  &kp NB_AE
-&mo 3   &kp Z               &kp X           &kp C             &kp V                 &lt 11 B       &mt BACKSPACE N  &kp M                &kp COMMA          &kp DOT          &none                         &none
-                                            &lt 5 ESC         &mt LEFT_COMMAND TAB  &lt 2 SPACE    &lt 1 BACKSPACE  &kp ENTER            &kp LA(LG(B))
+&none   &kp Q               &kp W           &kp E             &kp R                 &lt 10 NB_T    &kp Y            &kp U                &kp I              &kp O            &kp P                         &kp NB_A_RING
+&mo 11  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &lt 7 G        &lt 5 H          &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_O_SLASH  &kp NB_AE
+&mo 4   &kp Z               &kp X           &kp C             &kp V                 &lt 12 B       &mt BACKSPACE N  &kp M                &kp COMMA          &kp DOT          &none                         &none
+                                            &lt 6 ESC         &mt LEFT_COMMAND TAB  &lt 3 SPACE    &lt 2 BACKSPACE  &kp ENTER            &kp LA(LG(B))
+            >;
+        };
+
+        Windows_Base {
+            display-name = "windows";
+            bindings = <
+&none   &kp Q               &kp W           &kp E             &kp R                 &lt 10 NB_T    &kp Y            &kp U                &kp I              &kp O            &kp P                         &kp NB_A_RING
+&mo 11  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &lt 7 G        &lt 5 H          &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_O_SLASH  &kp NB_AE
+&mo 4   &kp Z               &kp X           &kp C             &kp V                 &lt 12 B       &mt BACKSPACE N  &kp M                &kp COMMA          &kp DOT          &none                         &none
+                                            &lt 6 ESC         &mt LEFT_COMMAND TAB  &lt 3 SPACE    &lt 2 BACKSPACE  &kp ENTER            &kp LA(LG(B))
             >;
         };
 
@@ -212,7 +222,7 @@
 &none  &none                          &none                  &none                      &none                          &none    &none         &kp HOME  &kp UP    &kp END    &none  &none
 &none  &mt LEFT_CONTROL LEFT_CONTROL  &mt LEFT_ALT LEFT_ALT  &mt LEFT_SHIFT LEFT_SHIFT  &mt LEFT_COMMAND LEFT_COMMAND  &none    &kp NB_PLUS   &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
 &none  &none                          &none                  &none                      &none                          &none    &kp NB_MINUS  &none     &none     &none      &none  &none
-                                                             &kp LEFT_CONTROL           &kp LS(LC(LG(LEFT_ALT)))       &mo 7    &none         &none     &none
+                                                             &kp LEFT_CONTROL           &kp LS(LC(LG(LEFT_ALT)))       &mo 8    &none         &none     &none
             >;
         };
 
@@ -222,7 +232,7 @@
 &none  &kp LS(NUMBER_4)                       &kp NB_LESS_THAN         &kp NB_GREATER_THAN  &kp NB_UNDERSCORE  &kp RA(N7)         &kp NB_AMPERSAND    &kp LA(LS(NB_N8))        &kp LS(LA(N9))            &kp NB_EQUAL  &kp RA(SINGLE_QUOTE)  &none
 &none  &kp NB_DOUBLE_QUOTES                   &kp LA(NB_SINGLE_QUOTE)  &kp NB_SEMICOLON     &kp NB_COLON       &kp NB_SLASH       &kp NB_QUESTION     &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp NB_PLUS   &kp NB_SINGLE_QUOTE   &none
 &none  &mt LA(LC(LG(LEFT_SHIFT))) LEFT_SHIFT  &none                    &none                &kp NB_HASH        &kp NB_ASTERISK    &kp NB_EXCLAMATION  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp NB_MINUS  &none                 &none
-                                                                       &none                &none              &none              &mo 7               &kp NB_PERCENT           &none
+                                                                       &none                &none              &none              &mo 8               &kp NB_PERCENT           &none
             >;
         };
 
@@ -270,7 +280,7 @@
             display-name = "mouse";
             bindings = <
 &none  &none  &none  &none      &none      &none    &none  &none           &mmv MOVE_UP    &none            &none  &none
-&none  &none  &mo 8  &mkp RCLK  &mkp LCLK  &none    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&none  &none  &mo 9  &mkp RCLK  &mkp LCLK  &none    &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
 &none  &none  &none  &none      &none      &none    &none  &none           &none           &none            &none  &none
                      &none      &none      &none    &none  &none           &none
             >;
@@ -300,9 +310,9 @@
             display-name = "tmux-p";
             bindings = <
 &none  &none  &none  &none  &none   &none     &none                        &tmux_swap_pane_left  &tmux_pane_up     &tmux_swap_pane_right  &none  &none
-&none  &none  &none  &none  &mo 11  &none     &tmux_split_pane_vertical    &tmux_pane_left       &tmux_pane_down   &tmux_pane_right       &none  &none
+&none  &none  &none  &none  &mo 12  &none     &tmux_split_pane_vertical    &tmux_pane_left       &tmux_pane_down   &tmux_pane_right       &none  &none
 &none  &none  &none  &none  &none   &none     &tmux_split_pane_horizontal  &none                 &none             &none                  &none  &none
-                     &none  &none   &mo 12    &kp RC(D)                    &kp RC(B)             &tmux_pane_focus
+                     &none  &none   &mo 13    &kp RC(D)                    &kp RC(B)             &tmux_pane_focus
             >;
         };
 
