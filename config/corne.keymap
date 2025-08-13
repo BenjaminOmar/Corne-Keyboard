@@ -196,8 +196,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
-            display-name = "base";
+        Mac_Base {
+            display-name = "mac";
             bindings = <
 &none   &kp Q               &kp W           &kp E             &kp R                 &lt 9 NB_T     &kp Y            &kp U                &kp I              &kp O            &kp P                         &kp NB_A_RING
 &mo 10  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F    &lt 6 G        &lt 4 H          &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL NB_O_SLASH  &kp NB_AE
