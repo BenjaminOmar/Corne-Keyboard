@@ -279,9 +279,9 @@
         IDE {
             display-name = "ide";
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp LG(W)      &none                      &none  &none                      &none  &none
-&none  &none  &none  &none  &none  &none    &kp LG(P)      &kp LS(LA(LC(LG(NB_N5))))  &none  &kp LS(LA(LC(LG(NB_N6))))  &none  &none
-&none  &none  &none  &none  &none  &none    &none          &none                      &none  &none                      &none  &none
+&none  &none  &none  &none  &none  &none    &kp LG(W)      &none                      &none       &none                      &none  &none
+&none  &none  &none  &none  &none  &none    &kp LG(P)      &kp LS(LA(LC(LG(NB_N5))))  &none       &kp LS(LA(LC(LG(NB_N6))))  &none  &none
+&none  &none  &none  &none  &none  &none    &none          &kp RG(N1)                 &kp RG(N2)  &kp RG(N3)                 &none  &none
                      &none  &none  &none    &kp RG(RS(E))  &kp RC(NB_PLUS)            &none
             >;
         };
