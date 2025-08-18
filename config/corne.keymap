@@ -211,6 +211,25 @@
 
             label = "TMUX_RESIZE_PANE_RIGHT";
         };
+
+        editor_focus_left: editor_focus_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(K)>, <&macro_wait_time 10>, <&kp RG(LEFT_ARROW)>;
+
+            label = "EDITOR_FOCUS_LEFT";
+        };
+
+        editor_focus_right: editor_focus_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RG(K)>,
+                <&macro_wait_time 10>,
+                <&kp RG(RIGHT_ARROW)>;
+
+            label = "EDITOR_FOCUS_RIGHT";
+        };
     };
 
     keymap {
@@ -279,10 +298,10 @@
         IDE {
             display-name = "ide";
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp LG(W)      &kp RG(N1)                 &kp RG(N2)  &kp RG(N3)                 &none  &none
-&none  &none  &none  &none  &none  &none    &kp LG(P)      &kp LS(LA(LC(LG(NB_N5))))  &none       &kp LS(LA(LC(LG(NB_N6))))  &none  &none
-&none  &none  &none  &none  &none  &none    &none          &none                      &none       &none                      &none  &none
-                     &none  &none  &none    &kp RG(RS(E))  &kp RC(NB_PLUS)            &none
+&none  &none  &none       &none  &none  &none    &kp LG(W)      &kp RG(N1)                 &kp RG(N2)  &kp RG(N3)                 &none  &none
+&none  &none  &kp RG(N1)  &none  &none  &none    &kp LG(P)      &kp LS(LA(LC(LG(NB_N5))))  &none       &kp LS(LA(LC(LG(NB_N6))))  &none  &none
+&none  &none  &none       &none  &none  &none    &none          &none                      &none       &none                      &none  &none
+                          &none  &none  &none    &kp RG(RS(E))  &kp RC(NB_PLUS)            &none
             >;
         };
 
