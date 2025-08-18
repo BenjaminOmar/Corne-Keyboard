@@ -298,10 +298,10 @@
         IDE {
             display-name = "ide";
             bindings = <
-&none  &none  &none       &none  &none  &none    &kp LG(W)      &kp RG(N1)                 &kp RG(N2)  &kp RG(N3)                 &none  &none
-&none  &none  &kp RG(N1)  &none  &none  &none    &kp LG(P)      &kp LS(LA(LC(LG(NB_N5))))  &none       &kp LS(LA(LC(LG(NB_N6))))  &none  &none
-&none  &none  &none       &none  &none  &none    &none          &none                      &none       &none                      &none  &none
-                          &none  &none  &none    &kp RG(RS(E))  &kp RC(NB_PLUS)            &none
+&none  &none  &none               &none  &none                &none    &kp LG(W)      &kp RG(N1)                 &kp RG(N2)  &kp RG(N3)                 &none  &none
+&none  &none  &editor_focus_left  &none  &editor_focus_right  &none    &kp LG(P)      &kp LS(LA(LC(LG(NB_N5))))  &none       &kp LS(LA(LC(LG(NB_N6))))  &none  &none
+&none  &none  &none               &none  &none                &none    &none          &none                      &none       &none                      &none  &none
+                                  &none  &none                &none    &kp RG(RS(E))  &kp RC(NB_PLUS)            &none
             >;
         };
 
