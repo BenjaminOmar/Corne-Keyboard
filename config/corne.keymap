@@ -259,7 +259,7 @@
             display-name = "movement";
             bindings = <
 &none  &none                          &none                  &none                      &none                          &none    &none         &kp HOME  &kp UP    &kp END    &kp A  &kp B
-&none  &mt LEFT_CONTROL LEFT_CONTROL  &mt LEFT_ALT LEFT_ALT  &mt LEFT_SHIFT LEFT_SHIFT  &mt LEFT_COMMAND LEFT_COMMAND  &none    &kp NB_PLUS   &kp LEFT  &kp DOWN  &kp RIGHT  &kp C  &kp D
+&none  &mt LEFT_CONTROL LEFT_CONTROL  &mt LEFT_ALT LEFT_ALT  &mt LEFT_SHIFT LEFT_SHIFT  &mt LEFT_COMMAND LEFT_COMMAND  &none    &kp NB_PLUS   &kp LEFT  &kp DOWN  &kp RIGHT  &kp T  &kp D
 &none  &none                          &none                  &none                      &none                          &none    &kp NB_MINUS  &kp E     &none     &kp F      &none  &none
                                                              &kp LEFT_CONTROL           &kp LS(LC(LG(LEFT_ALT)))       &mo 9    &none         &none     &none
             >;
