@@ -231,11 +231,11 @@
             label = "EDITOR_FOCUS_RIGHT";
         };
 
-        os_mac2: os_mac {
+        os_mac2: os_mac2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3 &to 0>;
-            label = "OS_MAC";
+            label = "OS_MAC2";
         };
     };
 
